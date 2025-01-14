@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { Image } from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
@@ -6,9 +7,13 @@ import { Text, View } from '@/components/Themed';
 export default function TabFourScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab FOURRRR</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/four.tsx" />
+      <Image 
+        style={{ width: 400, height: 700 }}
+        source={require('@/assets/images/settings.png')} 
+      />
+      {/* <Text style={styles.title}>Tab FOURRRR</Text> */}
+      {/* <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <EditScreenInfo path="app/(tabs)/four.tsx" /> */}
     </View>
   );
 }
